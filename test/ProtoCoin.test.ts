@@ -19,14 +19,14 @@ describe('ProtoCoin', function () {
     const { protoCoin, owner, otherAccount } = await loadFixture(deployFixture);
 
     const name = await protoCoin.name();
-    expect(name).to.equal('ProtoCoin');
+    expect(name).to.equal('New ProtoCoin');
   });
 
   it('Should have correct symbol', async function () {
     const { protoCoin, owner, otherAccount } = await loadFixture(deployFixture);
 
     const symbol = await protoCoin.symbol();
-    expect(symbol).to.equal('PRC');
+    expect(symbol).to.equal('NPC');
   });
 
   it('Should have correct decimals', async function () {

@@ -10,7 +10,7 @@ contract ProtoCoin is ERC20 {
 
     mapping(address => uint256) private nextMint;
 
-    constructor() ERC20("ProtoCoin", "PRC") {
+    constructor() ERC20("New ProtoCoin", "NPC") {
         _owner = msg.sender;
         _mint(msg.sender, 1000 * 10 ** 18);
     }
